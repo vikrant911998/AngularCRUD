@@ -1,0 +1,34 @@
+<!-- <div class="container">
+    <h1 class="alert-primary text-center">This is AppComponent</h1>
+    <app-input></app-input>
+    <br><br>
+    <app-list></app-list>
+</div> -->
+
+<div class="container">
+    <h1 class="alert-success text-center">CrudApp</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MyCrudApp</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" routerLinkActive="active" [routerLink]="[ '/']">InputComponent<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[ '/list']" >ListComponent</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" [routerLink]="[ '/view']" >ViewComponent</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" [routerLink]="[ '/edit']" >EditComponent</a>
+            </li>
+          </ul>  
+        </div>
+      </nav>
+      <router-outlet></router-outlet>
+</div>

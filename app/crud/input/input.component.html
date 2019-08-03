@@ -1,0 +1,17 @@
+
+
+<h2 class="alert-primary text-center">This is the InputComponent</h2>
+<br>
+<input #id type="text" class="form-control" placeholder="Enter the customer ID">
+<br>
+<input #name type="text" class="form-control" placeholder="Enter the customer name">
+<br>
+<input #user type="text" class="form-control" placeholder="Enter the username">
+<br>
+<input #pwd type="password" class="form-control" placeholder="Enter the password">
+<br>
+
+<button class="btn btn-primary mr-2" (click)="add(id.value,name.value,user.value,pwd.value)">Add</button>
+<button class="btn btn-danger mr-2">Delete</button>
+<button class="btn btn-warning mr-2">Update</button>
+<button class="btn btn-success mr-2">Search</button>
